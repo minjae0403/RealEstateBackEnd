@@ -18,4 +18,8 @@ public class TestController {
     public String getInput(@PathVariable("input") String var) {
         return var;
     }
+
+    //
+    @GetMapping(value ="/test/{input}")
+    public String getInput(@PathVariable("input") String var) {return "result:"+var;}
 }
